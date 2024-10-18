@@ -10,6 +10,6 @@ $ cmake ..
 $ make
 ~~~
 
-Once the project successfully builds, there should now be a ‘task_priority.uf2’ in the ‘build’ directory. This file is the binary we will flash to the Pico. In order to flash this file, first hold down the BOOTSEL button on the Pico board while plugging it in to the USB interface. This will mount the Pico as a drive. Then copy the ‘blink.uf2’ file to the drive location and the Pico will automatically reboot and run the application.
+Once the project successfully builds, there should now be a ‘Gerenciamento_memoria.uf2’ in the ‘build’ directory. This file is the binary we will flash to the Pico. In order to flash this file, first hold down the BOOTSEL button on the Pico board while plugging it in to the USB interface. This will mount the Pico as a drive. Then copy the ‘blink.uf2’ file to the drive location and the Pico will automatically reboot and run the application.
 
 
