@@ -1,3 +1,148 @@
+# Raspberry Pi Pico FreeRTOS Demo (Sensores & Atuadores)
+
+## 📌 Visão Geral
+Este projeto demonstra o uso do **FreeRTOS** no **Raspberry Pi Pico (RP2040)**, integrando múltiplos sensores e atuadores para explorar, na prática, os recursos de um sistema operacional de tempo real.
+
+O sistema atua como uma **plataforma completa de testes de RTOS**, apresentando conceitos centrais do FreeRTOS como escalonamento de tarefas, comunicação entre tarefas, sincronização, gerenciamento de memória e temporizadores — todos aplicados a dados reais de sensores e controle de atuadores.
+
+---
+
+## ⚙️ Funcionalidades
+- 🧠 **Integração com FreeRTOS**
+  - Multitarefa com escalonamento em tempo real
+  - Escalonador preemptivo
+
+- 🧵 **Gerenciamento de Tarefas**
+  - Múltiplas tarefas concorrentes
+  - Priorização de tarefas
+  - Execução periódica e orientada a eventos
+
+- 🔄 **Comunicação entre Tarefas**
+  - Filas (queues) para troca de dados entre tarefas
+
+- 🔒 **Mecanismos de Sincronização**
+  - Mutex para proteção de recursos compartilhados
+  - Semáforos binários e de contagem
+
+- ⏱️ **Temporizadores**
+  - Temporizadores de software para operações agendadas
+  - Execução baseada em callbacks
+
+- 🧮 **Gerenciamento de Memória**
+  - Alocação dinâmica usando heap do FreeRTOS
+  - Uso eficiente de memória
+
+- 🔌 **Integração de Sensores & Atuadores**
+  - Aquisição de dados de sensores em tempo real
+  - Controle de atuadores baseado nos dados processados
+
+---
+
+## 🧠 Arquitetura do Sistema
+- **Microcontrolador:** Raspberry Pi Pico (RP2040)  
+- **RTOS:** FreeRTOS  
+
+- **Periféricos:**
+  - Sensores (temperatura, distância, movimento, etc.)  
+  - Atuadores (LEDs, buzzers, motores, etc.)  
+
+- **Módulos Principais:**
+  - Escalonador de Tarefas  
+  - Filas (troca de dados)  
+  - Mutex & Semáforos  
+  - Temporizadores de Software  
+  - Gerenciador de Memória  
+
+---
+
+## ⚡ Conceitos de FreeRTOS Demonstrados
+
+### 🧵 Tarefas
+- Execução concorrente de múltiplas tarefas  
+- Diferentes prioridades e frequências de execução  
+- Tarefas periódicas de leitura de sensores  
+
+### 📬 Filas (Queues)
+- Troca segura de dados entre tarefas  
+- Dados de sensores enviados para tarefas de processamento/controle  
+
+### 🔒 Mutex
+- Proteção de recursos compartilhados (ex: periféricos, interfaces de comunicação)  
+- Evita condições de corrida (race conditions)  
+
+### 🚦 Semáforos
+- Sincronização entre tarefas  
+- Sinalização de eventos entre interrupções e tarefas  
+
+### ⏱️ Temporizadores
+- Temporizadores de software para ações periódicas  
+- Execução baseada em callbacks  
+
+### 🧮 Gerenciamento de Memória
+- Alocação dinâmica de memória  
+- Otimização do uso da heap  
+
+### ⚙️ Escalonador
+- Escalonamento preemptivo  
+- Troca de tarefas baseada em prioridade e tempo  
+
+---
+
+## 🖥️ Funcionamento do Sistema
+O sistema executa múltiplas tarefas simultaneamente, como:
+
+- Tarefas de aquisição de sensores (leitura de dados)  
+- Tarefas de processamento de dados  
+- Tarefas de controle de atuadores  
+- Comunicação entre tarefas usando filas  
+- Sincronização utilizando mutex e semáforos  
+- Execução periódica controlada por temporizadores  
+
+Todas as operações são gerenciadas pelo **escalonador do FreeRTOS**, garantindo execução determinística e eficiente.
+
+---
+
+## 📊 Aplicações
+- Plataforma de aprendizado e ensino de RTOS  
+- Prototipagem de sistemas embarcados  
+- Sistemas de sensores em tempo real  
+- Base para desenvolvimento de IoT  
+
+---
+
+## 🚀 Melhorias Futuras
+- Integração com comunicação sem fio (Wi-Fi / Bluetooth)  
+- Dashboard para visualização de dados  
+- Otimização de baixo consumo de energia  
+- Estratégias avançadas de escalonamento  
+- Integração com Edge AI  
+
+---
+
+## 🛠️ Tecnologias & Habilidades
+- Sistemas Embarcados  
+- Sistemas Operacionais de Tempo Real (RTOS)  
+- FreeRTOS  
+- Raspberry Pi Pico (RP2040)  
+- Multithreading & Concorrência  
+- Comunicação entre Tarefas (Filas)  
+- Sincronização (Mutex & Semáforos)  
+- Gerenciamento de Memória  
+- Integração de Sensores & Atuadores  
+
+---
+
+## 📷 Preview
+(Adicione imagens do seu setup, saída do monitor serial ou comportamento do sistema aqui)
+
+---
+
+## 👩‍💻 Autor
+Desenvolvido por Mickaelly Freitas Nobre
+
+---
+
+
 # Raspberry Pi Pico FreeRTOS Demo (Sensors & Actuators)
 
 ## 📌 Overview
